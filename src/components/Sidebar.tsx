@@ -68,11 +68,11 @@ export default function Sidebar() {
         }          
     ]
     return (
-        <div className="fixed flex flex-col gap-4 w-[300px] min-w-[300px] p-4 min-h-screen">
+        <div className="fixed flex flex-col gap-4 w-[250px] min-w-[250px] p-4 min-h-screen">
             <div> 
                 <UserItem
                     name="Ricardo Olivari"
-                    description="ricardoaot@gmail.com"
+                    description="Fullstack Developer"
                     avatarUrl="https://media.licdn.com/dms/image/D4D03AQFctWJb85x_bg/profile-displayphoto-shrink_100_100/0/1701925373811?e=1726099200&v=beta&t=QhSgXFkfsz0NrPbWpzi0ZewwnvN8mSbQKIn_rJWCkss"
                     online={true}
                     verified={true}

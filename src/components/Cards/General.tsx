@@ -19,8 +19,8 @@ const MyResponsiveBump = (props:any) => {
         data={props.data}
         colors={
             //{ scheme: 'spectral' }
-            //{ scheme: 'blues' }
-            { scheme: 'blue_green' }
+            { scheme: 'blues' }
+            //{ scheme: 'blue_green' }
         }
         lineWidth={3}
         activeLineWidth={6}
@@ -70,7 +70,7 @@ export default function General () {
     
     return <Card className='w-full'> 
         <CardHeader>
-            <CardTitle>Anual Ranking</CardTitle>
+            <CardTitle>Performance Indicators</CardTitle>
             <CardDescription>This Graph explains the ranking of a particular item over the course of several years.</CardDescription>
         </CardHeader>
         <CardContent className='grid gap-4 h-[300px]'>

@@ -11,40 +11,37 @@ export default function Home() {
     <div className="grid grid-cols-2 gap-[20px]">
       <General />
       <div className="grid gap-4">
-        <Calendar/>
-        <Calendar/>
+        <Card className="h-full ">
+          <CardHeader>
+            <CardTitle>Budget Management</CardTitle>
+            <CardDescription>Lorem ipsum dolor sit amet consectetur.</CardDescription>
+          </CardHeader>
+          <CardContent className='h-[300px] items-center w-full overflow-y-scroll'>
+            <TableComp/>
+          </CardContent>
+        </Card>
       </div>
     </div>
-    <div className="grid grid-cols-3 gap-4 pt-4 h-[500px] overflow-hidden">
+
+    <div className="grid grid-cols-2 gap-4 pt-4 h-[500px] overflow-hidden">
       <Card className="h-full">
         <CardHeader>
-          <CardTitle>Lineal analysis</CardTitle>
-          <CardDescription>Lorem ipsum dolor sit amet consectetur.</CardDescription>
-        </CardHeader>
-        <CardContent className='h-[300px] flex items-center w-full'>
-          <Lines />
-        </CardContent>
-      </Card>
-
-      <Card className="h-full ">
-        <CardHeader>
-          <CardTitle>Invoices Table</CardTitle>
-          <CardDescription>Lorem ipsum dolor sit amet consectetur.</CardDescription>
-        </CardHeader>
-        <CardContent className='h-[300px] items-center w-full overflow-y-scroll'>
-          <TableComp/>
-        </CardContent>
-      </Card>
-
-      <Card className="h-full">
-        <CardHeader>
-            <CardTitle>Data Table</CardTitle>
+            <CardTitle>User Bills</CardTitle>
             <CardDescription>
               Lorem ipsum dolor sit amet consectetur.
             </CardDescription>
         </CardHeader>
         <CardContent className='h-[300px] items-center w-full overflow-y-scroll'>
           <DataTableDemo />
+        </CardContent>
+      </Card>
+      <Card className="h-full">
+        <CardHeader>
+          <CardTitle>Pipeline diagram</CardTitle>
+          <CardDescription>Lorem ipsum dolor sit amet consectetur.</CardDescription>
+        </CardHeader>
+        <CardContent className='h-[300px] flex items-center w-full'>
+          <Lines />
         </CardContent>
       </Card>
 

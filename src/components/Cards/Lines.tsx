@@ -12,6 +12,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui
 const MyResponsiveLine = (props:any) => (
     <ResponsiveLine
         data={props.data}
+        //colors={{ scheme: 'blues' }}
+        colors={{ scheme: 'category10' }}
+        //enableArea={true}
         margin={{ top: 30, right: 30, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
         yScale={{
