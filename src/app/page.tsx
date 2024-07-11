@@ -3,9 +3,7 @@ import { DataTableDemo } from "@/components/Cards/DataTable";
 import General from "@/components/Cards/General";
 import Lines from "@/components/Cards/Lines";
 import { TableComp } from "@/components/Cards/TableComp";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
 
 
 export default function Home() {

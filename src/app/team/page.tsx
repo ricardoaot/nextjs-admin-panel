@@ -12,6 +12,7 @@ type Member = {
     backgroundColorValue: string;
     role: string;
     status?: string;
+    avatarUrl?: string;
 }
 
 export default function TeamSettings () {
@@ -23,12 +24,14 @@ export default function TeamSettings () {
             full_name: "Ricardo Olivari",
             backgroundColorValue: "rgba(125, 24, 66, 1)",
             role: "admin",
+            avatarUrl: "https://media.licdn.com/dms/image/D4D03AQFctWJb85x_bg/profile-displayphoto-shrink_100_100/0/1701925373811?e=1726099200&v=beta&t=QhSgXFkfsz0NrPbWpzi0ZewwnvN8mSbQKIn_rJWCkss",
         },
         {
             email: "juanmp@gmail.com",
             full_name: "Juan Mariano",
             backgroundColorValue: "rgba(125, 24, 66, 1)",
             role: "viewer",
+            avatarUrl: "https://i.pravatar.cc/150?u=a042581f4e29026707d"
         },
         {
             email: "Marina@gmail.com",
@@ -60,9 +63,9 @@ export default function TeamSettings () {
                         <div className="col-span-2">
 
                             <UserItem 
-                                title={member.full_name}
+                                name={member.full_name}
                                 description={member.email}
-                                avatarUrl="https://media.licdn.com/dms/image/D4D03AQFctWJb85x_bg/profile-displayphoto-shrink_100_100/0/1701925373811?e=1726099200&v=beta&t=QhSgXFkfsz0NrPbWpzi0ZewwnvN8mSbQKIn_rJWCkss"
+                                avatarUrl={member.avatarUrl}
                                 online={true}
                                 verified={false}
                                 shadow={true}
@@ -70,7 +73,7 @@ export default function TeamSettings () {
                                 onClick={(e:any) => console.log("User item clicked!", e)}
                                 
                                 backgroundColor={member.backgroundColorValue}
-                                key={index} {...member} />
+                                key={index}  />
                             
                         </div>
                         <div className="col-span-3 flex gap-2">
